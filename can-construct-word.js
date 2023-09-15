@@ -21,8 +21,8 @@
 function canConstructWord(word, letters) {
   if (letters.length < word.length) return false;
 
-  let wordFreq = getFrequencyCounter(word);
-  let letterFreq = getFrequencyCounter(letters);
+  let wordFreq = getFrequencyCounter(word); //TODO: make name more clear, add s
+  let letterFreq = getFrequencyCounter(letters); //TODO: add s
 
   for (let key in wordFreq) {
     if (!(key in letterFreq)) return false;
